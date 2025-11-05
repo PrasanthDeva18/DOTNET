@@ -1,0 +1,25 @@
+A Dictionary<TKey, TValue> in C# is a collection of key–value pairs —
+where each key is unique, and it’s used to quickly find the corresponding value.
+
+Dictionary<Tkey, Tvalue> name = new Dictionary<Tkey, Tvalue>();
+
+Example
+
+Dictionary<int, string> studentdetails = new Dictionary<int, string>();
+
+studentdetails.Add(94421, "Deva");
+studentdetails[94457] = "Prasanth";
+
+
+Access the method using key
+O/P - studentdetails[94457] - "Prasanth"
+
+
+Methods:-
+.Add(key, value) - to add the value in the dict
+.Remove(key) - to remove the item using key
+.ContainsKey(key) - check if the key is exist or not
+.ContainsValue(value) - check if the values is exist or not
+.Count - used for get number of items in dict
+.Keys -  used for get all keys
+.Values - used for get all values

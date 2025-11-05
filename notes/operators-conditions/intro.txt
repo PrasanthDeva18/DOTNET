@@ -1,0 +1,17 @@
+| Operator | Description       | Example   | Result (`x=5`)     | x | y |
+| -------- | ----------------- | --------- | ------------------ | - | - |
+| `++x`    | Prefix increment  | `y = ++x` | Increment first    | 6 | 6 |
+| `x++`    | Postfix increment | `y = x++` | Use then increment | 6 | 5 |
+| `--x`    | Prefix decrement  | `y = --x` | Decrement first    | 4 | 4 |
+| `x--`    | Postfix decrement | `y = x--` | Use then decrement | 4 | 5 |
+
+
+Condtional Statments - If / Else, Switch;
+
+Loops - for, while, do while.
+
+Method / Arguments -  Return Values
+
+Scope
+
+

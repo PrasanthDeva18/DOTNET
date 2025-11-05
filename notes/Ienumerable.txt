@@ -1,0 +1,32 @@
+IEnumerable<T> is an interface in C# that represents a sequence of items that you can loop through using foreach.\\It only allows you to read data — not modify (you can’t call .Add() or .Remove() on it).
+
+It only allows you to read data — not modify (you can’t call .Add() or .Remove() on it).
+
+1. For Read-Only Data Access
+2. LINQ operations
+3. For Deferred Execution - a read-only, loopable version of your collection.
+
+1.
+public IEnumerable<string> GetNames()
+{
+    return new List<string> { "Prasanth", "Vennila", "Miruthula" };
+}
+
+foreach (var name in GetNames())
+    Console.WriteLine(name);
+
+2.
+List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
+IEnumerable<int> evens = numbers.Where(n => n % 2 == 0);
+
+
+
+3.
+
+IEnumerable<int> query = numbers.Where(n => n > 2); // not executed yet
+foreach (var n in query)                            // executes here
+    Console.WriteLine(n);
+
+
+When you assign a LINQ query to IEnumerable<T>, it doesn’t run immediately — it executes only when you loop over it.
+This is called lazy evaluation or deferred execution.

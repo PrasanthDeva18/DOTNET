@@ -1,0 +1,22 @@
+int[,] arrname; - 2d
+int[,,] arrname; - 3d array
+
+int[,] arrname = {
+    {1,2},
+    {3,4}
+}
+
+---3D Array---
+int [,,] arrname = {
+    {
+        {1,2},
+        {3,4}
+    },
+    {
+        {5,6},
+        {7,8}
+    }
+}
+
+O/P 2D Arr - arrname[0,1] -- Prints 2
+O/P 3D Arr - arrname[0,0,1] - Prints 2

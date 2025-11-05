@@ -1,0 +1,31 @@
+Array is a homogeneous in c#
+
+datatype[] arrname = new datatype[size];
+
+Array Declaration;
+datatype[] arrayName;
+
+initialization in Array
+datatype[] arrname = {"Prasanth", "Vennila"};
+
+3 types of array initialization
+using new keyword
+
+datatype[] arrname = new datatype[size];
+
+using new keyword with initialization automatically infer the size
+datatype[] arrname = new datatype[size] {"prasanth",  "deva"};
+
+direct initalization
+datatype[] arrname = {"prasanth",  "deva"};
+
+in c# after the Declaration
+ you must initalization the size of the array
+
+ System.NullReferenceException: Object reference not set to an instance of an object
+
+
+
+
+
+
